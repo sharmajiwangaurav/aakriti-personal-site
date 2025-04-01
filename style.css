@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #000;
+    color: white;
+    scroll-behavior: smooth;
+  }
+  
+  section.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 12px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  section.split {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+  
+  .split .text, .split .image {
+    flex: 1 1 50%;
+    padding: 3rem;
+  }
+  
+  .split .image {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  section.about {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: #111;
+  }
+  
+  section.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  section.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    section.split {
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  
